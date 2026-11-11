@@ -1,0 +1,157 @@
+{
+  "assumptions": {
+    "volume_per_year": 2247,
+    "baseline_minutes": 35,
+    "after_minutes": 12,
+    "loaded_rate_rub_h": 1200,
+    "returned_share_before": 0.147,
+    "returned_share_after": 0.08,
+    "rework_minutes": 20,
+    "duplicate_share": 0.02,
+    "duplicate_minutes": 30,
+    "input_tokens": 1900,
+    "output_tokens": 500,
+    "input_price_rub_per_1m": 45,
+    "output_price_rub_per_1m": 180,
+    "calls_per_request": 1.7,
+    "embedding_tokens": 600,
+    "embedding_price_rub_per_1m": 8,
+    "dev_costs": {
+      "AI-инженер, 200 ч × 2 500 ₽": 500000,
+      "Аналитик данных, 50 ч × 1 800 ₽": 90000,
+      "Эксперт по закупкам, 40 ч × 1 500 ₽": 60000,
+      "Проектный менеджер, 30 ч × 2 200 ₽": 66000,
+      "QA и пилот, 30 ч × 1 200 ₽": 36000,
+      "Обучение и управление изменениями, 20 ч × 1 400 ₽": 28000
+    },
+    "implementation_costs": {
+      "Интеграция с 1С/ERP": 120000,
+      "ИБ и оценка воздействия на данные": 60000,
+      "Документация процессов": 40000,
+      "Резерв на непредвиденные работы": 100000
+    },
+    "annual_fixed_costs": {
+      "Хостинг и вычислительные ресурсы": 36000,
+      "Мониторинг и observability": 24000,
+      "Поддержка и инциденты": 60000,
+      "Лицензии и инструменты": 60000,
+      "Сопровождение ИБ": 60000
+    },
+    "discount_rate": 0.2
+  },
+  "base": {
+    "volume": 2247,
+    "saved_minutes": 23,
+    "cost_per_call": 0.1755,
+    "cost_per_request": 0.3031,
+    "annual_api": 681.178,
+    "saving_time": 1033620.0,
+    "saving_rework": 60219.6,
+    "saving_duplicates": 26964.0,
+    "annual_benefit": 1120803.6,
+    "one_time": 1100000,
+    "annual_fixed": 240681.178,
+    "annual_net": 880122.422,
+    "payback_months": 14.9979,
+    "breakeven_requests": 2687.8131,
+    "roi_3y": 1.4003,
+    "npv_3y": 918316.6832,
+    "contribution_per_request": 498.8
+  },
+  "dev_total": 780000,
+  "implementation_total": 320000,
+  "annual_fixed_total": 240000,
+  "sensitivity": [
+    {
+      "volume": 1500,
+      "saved_minutes": 15,
+      "annual_net": 267745.0,
+      "payback_months": 49.3
+    },
+    {
+      "volume": 1500,
+      "saved_minutes": 23,
+      "annual_net": 507745.0,
+      "payback_months": 26.0
+    },
+    {
+      "volume": 1500,
+      "saved_minutes": 30,
+      "annual_net": 717745.0,
+      "payback_months": 18.4
+    },
+    {
+      "volume": 2000,
+      "saved_minutes": 15,
+      "annual_net": 436994.0,
+      "payback_months": 30.2
+    },
+    {
+      "volume": 2000,
+      "saved_minutes": 23,
+      "annual_net": 756994.0,
+      "payback_months": 17.4
+    },
+    {
+      "volume": 2000,
+      "saved_minutes": 30,
+      "annual_net": 1036994.0,
+      "payback_months": 12.7
+    },
+    {
+      "volume": 2247,
+      "saved_minutes": 15,
+      "annual_net": 520602.0,
+      "payback_months": 25.4
+    },
+    {
+      "volume": 2247,
+      "saved_minutes": 23,
+      "annual_net": 880122.0,
+      "payback_months": 15.0
+    },
+    {
+      "volume": 2247,
+      "saved_minutes": 30,
+      "annual_net": 1194702.0,
+      "payback_months": 11.0
+    },
+    {
+      "volume": 3000,
+      "saved_minutes": 15,
+      "annual_net": 775491.0,
+      "payback_months": 17.0
+    },
+    {
+      "volume": 3000,
+      "saved_minutes": 23,
+      "annual_net": 1255491.0,
+      "payback_months": 10.5
+    },
+    {
+      "volume": 3000,
+      "saved_minutes": 30,
+      "annual_net": 1675491.0,
+      "payback_months": 7.9
+    },
+    {
+      "volume": 4000,
+      "saved_minutes": 15,
+      "annual_net": 1113987.0,
+      "payback_months": 11.8
+    },
+    {
+      "volume": 4000,
+      "saved_minutes": 23,
+      "annual_net": 1753987.0,
+      "payback_months": 7.5
+    },
+    {
+      "volume": 4000,
+      "saved_minutes": 30,
+      "annual_net": 2313987.0,
+      "payback_months": 5.7
+    }
+  ],
+  "payback_month": 15
+}
